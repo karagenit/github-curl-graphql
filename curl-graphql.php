@@ -26,13 +26,13 @@
         $vars = str_replace("\n","",$vars); //can't use str_prep, as we can't escape quotes here
 
         $json = "{\n";
-        $json = $json.'"query":"'.$query.'"';
+        $json .= '"query":"'.$query.'"';
 
         if(strlen($vars) != 0) {
-            $json = $json.',"variables":'.$vars;
+            $json .= ',"variables":'.$vars;
         }
 
-        $json = $json."\n}";    
+        $json .= "\n}";    
         return $json;
     }
 ?>
