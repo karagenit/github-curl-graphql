@@ -35,14 +35,13 @@
         $query = str_replace("\"","\\\"",$query);
         $vars = str_replace("\n","",$vars);
 
-        $json = "{\n";
-        $json .= '"query":"'.$query.'"';
+        $json = '{"query":"'.$query.'"';
 
         if(strlen($vars) != 0) {
             $json .= ',"variables":'.$vars;
         }
 
-        $json .= "\n}";    
+        $json .= "}";    
         return $json;
     }
 ?>
