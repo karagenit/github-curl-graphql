@@ -1,5 +1,20 @@
 # Change Log
 
+## [v2.0.1](https://github.com/karagenit/github-curl-graphql/tree/v2.0.1) (2017-06-20)
+[Full Changelog](https://github.com/karagenit/github-curl-graphql/compare/v2.0.0...v2.0.1)
+
+**Closed issues:**
+
+- Test No Variables Query [\#11](https://github.com/karagenit/github-curl-graphql/issues/11)
+
+## [v2.0.0](https://github.com/karagenit/github-curl-graphql/tree/v2.0.0) (2017-06-20)
+[Full Changelog](https://github.com/karagenit/github-curl-graphql/compare/v1.0.2...v2.0.0)
+
+**Closed issues:**
+
+- Use json\_encode\(\) Instead of Manual Building [\#10](https://github.com/karagenit/github-curl-graphql/issues/10)
+- Display Text on Normal Execution [\#9](https://github.com/karagenit/github-curl-graphql/issues/9)
+
 ## [v1.0.2](https://github.com/karagenit/github-curl-graphql/tree/v1.0.2) (2017-06-20)
 [Full Changelog](https://github.com/karagenit/github-curl-graphql/compare/v1.0.1...v1.0.2)
 
