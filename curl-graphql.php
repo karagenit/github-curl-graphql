@@ -14,16 +14,11 @@
         return $data;
     }
 
-    function str_prep($str) {
-        $str = str_replace("\n","",$str);   
-        $str = str_replace("\"","\\\"",$str);
-        return $str;
-    }   
-
     //takes graphql query & variables (vars as json object, use json_encode(array)), returns json query
     function build_curl($query, $vars="") {
-        $query = str_prep($query);
-        $vars = str_replace("\n","",$vars); //can't use str_prep, as we can't escape quotes here
+        $query = str_replace("\n","",$query);
+        $query = str_replace("\"","\\\"",$query);
+        $vars = str_replace("\n","",$vars);
 
         $json = "{\n";
         $json .= '"query":"'.$query.'"';
