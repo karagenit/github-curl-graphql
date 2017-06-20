@@ -12,12 +12,16 @@
      */
     function get_curl($token, $json) {
         $curl = curl_init("https://api.github.com/graphql");
-        $args = array("Content-Type: application/json", "Content-Length: ".strlen($json), "Authorization: bearer $token");
+        $args = array("Content-Type: application/json", 
+                      "Content-Length: ".strlen($json), 
+                      "Authorization: bearer $token");
+
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($curl, CURLOPT_POSTFIELDS, $json);
         curl_setopt($curl, CURLOPT_HTTPHEADER, $args);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_USERAGENT, "GuestAgent");
+
         $data = curl_exec($curl);
         curl_close($curl);
         return $data;
@@ -34,7 +38,6 @@
         $json = array();
         $json['query'] = $query;
         $json['variables'] = $vars;
-
         return json_encode($json);
     }
 ?>
