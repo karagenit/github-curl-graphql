@@ -27,21 +27,14 @@
      * This function builds the JSON query to be sent via get_curl()
      *
      * @param string $query Query to be used, in the GraphQL Syntax
-     * @param string $vars  [Optional] Any Variables to be sent with the GraphQL Query
+     * @param mixed[] $vars [Optional] Any Variables to be sent with the GraphQL Query 
      * @return string       JSON Object to be passed to get_curl()
      */
-    function build_curl($query, $vars="") {
-        $query = str_replace("\n","",$query);
-        $query = str_replace("\"","\\\"",$query);
-        $vars = str_replace("\n","",$vars);
+    function build_curl($query, $vars=array()) {
+        $json = array();
+        $json['query'] = $query;
+        $json['variables'] = $vars;
 
-        $json = '{"query":"'.$query.'"';
-
-        if(strlen($vars) != 0) {
-            $json .= ',"variables":'.$vars;
-        }
-
-        $json .= "}";    
-        return $json;
+        return json_encode($json);
     }
 ?>
