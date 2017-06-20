@@ -1,5 +1,15 @@
 # Change Log
 
+## [v1.0.2](https://github.com/karagenit/github-curl-graphql/tree/v1.0.2) (2017-06-20)
+[Full Changelog](https://github.com/karagenit/github-curl-graphql/compare/v1.0.1...v1.0.2)
+
+**Closed issues:**
+
+- Remove build\_curl Outer Newlines [\#8](https://github.com/karagenit/github-curl-graphql/issues/8)
+- Changelog [\#6](https://github.com/karagenit/github-curl-graphql/issues/6)
+- PHP Inline Documentation [\#5](https://github.com/karagenit/github-curl-graphql/issues/5)
+- Remove str\_prep [\#2](https://github.com/karagenit/github-curl-graphql/issues/2)
+
 ## [v1.0.1](https://github.com/karagenit/github-curl-graphql/tree/v1.0.1) (2017-06-16)
 [Full Changelog](https://github.com/karagenit/github-curl-graphql/compare/v1.0.0...v1.0.1)
 
