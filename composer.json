@@ -1,5 +1,16 @@
 {
+    "name": "github/graphql",
+    "type": "library",
+    "description": "Send Queries to the Github GraphQL API",
+    "keywords": ["github", "graphql", "api", "curl"],
+    "homepage": "https://github.com/karagenit/github-curl-graphql",
+    "license": "MIT",
     "require": {
         "phpdocumentor/phpdocumentor": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
     }
 }
